@@ -1,0 +1,227 @@
+.top-banner {
+  background-color: $primary-light;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.primary-navigation {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  background-color: $gray;
+
+  .container {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 3rem;
+    .external-link {
+      font-size: 0.8rem;
+      margin-right: 20rem;
+      color: $primary-dark;
+      transition: all 0.5s;
+      .bxs-star {
+        padding: 1px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .jumia-brands {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      a {
+        font-family: $logo-font !important;
+        color: $gray-dark;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+      }
+      .jumia-logo {
+        font-family: $logo-font;
+        font-weight: bold;
+        color: $black;
+        text-transform: uppercase;
+        .bxs-star {
+          font-size: 0.6rem;
+          // margin-right: -1rem;
+        }
+      }
+      .j-pay {
+        &:hover {
+          color: blue;
+        }
+      }
+      .j-food {
+        &:hover {
+          color: $primary;
+        }
+      }
+      .j-force {
+        .bxs-star {
+          background-color: $gray-dark;
+          font-size: 0.8rem;
+        }
+        &:hover {
+          color: $black;
+          .bxs-star {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+header {
+  height: $header-height;
+  background-color: $white;
+  padding: 1rem 0;
+  nav {
+    display: flex;
+    @media (max-width: 769px) {
+      display: none;
+    }
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    .nav-list {
+      display: flex !important;
+      list-style: none;
+      gap: 1.5rem;
+      .nav-link {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s;
+        gap: 0.6rem;
+        i {
+          font-size: 1.6rem;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+      ul {
+        li {
+          button {
+            width: 100%;
+          }
+        }
+      }
+      .dropdown {
+        .dropdown-item {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1.3rem;
+          i {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+    .brand-logo {
+      font-family: $logo-font;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $black;
+      .bxs-star {
+        font-size: 1.5rem;
+      }
+    }
+    form {
+      flex: 1;
+      position: relative;
+      .search-icon {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        font-size: 1.5rem;
+        transform: translateY(-50%);
+        color: $gray-dark;
+      }
+      .form-control {
+        padding: 0.8rem 2rem;
+      }
+    }
+  }
+  .mobile-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      font-size: 1.3rem;
+    }
+    .header-btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .left-mobile {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .right-mobile {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      i {
+        color: $secondary;
+      }
+    }
+    .sidebar-menu {
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .link-with-icon {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $secondary;
+      }
+      .colored-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        span {
+          color: $primary;
+        }
+        .see-all {
+          text-decoration: underline;
+          color: blue;
+          text-transform: lowercase;
+        }
+      }
+    }
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+}
+.brand-logo {
+  font-family: $logo-font;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+  .bxs-star {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 769px) {
+    font-size: 1.4rem;
+  }
+}
+.link-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $secondary;
+}

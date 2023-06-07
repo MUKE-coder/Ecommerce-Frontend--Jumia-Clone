@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.bxs-star {
+  background-color: $primary;
+  color: white;
+  border-radius: 50%;
+}
+body {
+  font-family: $default-font;
+}
+.orange-btn {
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-family: $default-font;
+  text-transform: uppercase;
+  box-shadow: $default-box-shadow;
+  background-color: $primary;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid $gray-dark;
+}
+.dropdown-menu {
+  border-width: 0 !important;
+  border: none !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+}
+main {
+  background-color: $primary;
+}
+section {
+  padding: 1rem 0;
+}
