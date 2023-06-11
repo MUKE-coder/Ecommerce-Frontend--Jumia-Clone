@@ -17,6 +17,11 @@
       rel="stylesheet"
     />
     <!-- Bootstrap css cdn -->
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -285,43 +290,135 @@
         <section class="hero-section">
           <div class="left-sidebar">
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Supermarket</span>
+              ><i class="bx bx-store"></i> <span>Supermarket</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Home & Office</span>
+              ><i class="bx bx-building-house"></i> <span>Home & Office</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-shower"></i><span>Appliances</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-gas-pump"></i><span>Electronics</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-shekel"></i> <span>Health and Beauty</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-diamond"></i><span>Fashion</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-desktop"></i> <span>Computing</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-run"></i> <span>Sporting Goods</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-accessibility"></i> <span>Baby Products</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bxl-discord-alt"></i> <span>Gaming</span>
             </a>
             <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
-            </a>
-            <a href="/" class="link-with-icon"
-              ><i class="bx bx-message-dots"></i> <span>Live Chat</span>
+              ><i class="bx bx-dots-horizontal-rounded"></i>
+              <span>Other Categories</span>
             </a>
           </div>
-          <div class="home-slider">slider</div>
+          <div class="home-slider">
+            <!-- Slider main container -->
+            <div class="swiper" id="homeSlider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-1.gif"
+                        alt="Slide 1"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-2.png"
+                        alt="Slide 2"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-3.png"
+                        alt="Slide 3"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-4.png"
+                        alt="Slide 4"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-5.png"
+                        alt="Slide 5"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-6.gif"
+                        alt="Slide 6"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-7.gif"
+                        alt="Slide 7"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide">
+                    <a href="#">
+                      <img
+                        src="./assets/home-slides/slide-8.png"
+                        alt="Slide 8"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
           <div class="right-sidebar">
             <div class="right-sidebar-links">
               <a href="">
@@ -373,5 +470,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- Bootsrap js cdn -->
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Custom js -->
+    <script src="./js/app.js"></script>
   </body>
 </html>

@@ -8,7 +8,7 @@
     padding: 0.8rem;
     border-radius: 5px;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.7rem;
     background-color: $white;
     box-shadow: $sidebar-box-shadow;
     width: 20%;
@@ -60,10 +60,27 @@
   }
   .home-slider {
     border-radius: 5px;
-    background-color: purple;
+    // background-color: purple;
+    overflow: hidden;
     width: 60%;
     @media (max-width: 769px) {
       width: 100%;
+    }
+    #homeSlider {
+      height: 100%;
+      .slide {
+        height: 100%;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
     }
   }
   .link-with-icon {
@@ -75,4 +92,31 @@
       color: $primary;
     }
   }
+}
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    // opacity: 1;
+    width: 12px;
+    height: 12px;
+    // background-color: red;
+  }
+  .swiper-pagination-bullet-active {
+    width: 15px;
+    opacity: 1;
+    height: 15px;
+    background-color: $tertiary;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: $secondary;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white;
+  font-size: 1rem;
 }
